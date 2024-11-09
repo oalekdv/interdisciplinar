@@ -6,7 +6,7 @@ body{
 
 header
 {
-  position: fixed;
+  /* position: fixed; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -72,5 +72,27 @@ span.material-symbols-rounded
 
 main{
   background-color: #98a7c7;
-  
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
+.banner-video{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+.video {
+  width: 900px;
+  height: 500px;
+}
+.video video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
