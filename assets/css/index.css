@@ -12,7 +12,7 @@ header
   align-items: center;
   width: 100%;
   padding: 1.5rem;
-  background-color: #03246ca1;
+  background-color: #03246ce5;
 }
 .logo img{
    height: 90px;
@@ -72,4 +72,5 @@ span.material-symbols-rounded
 
 main{
   background-color: #98a7c7;
+  
 }
