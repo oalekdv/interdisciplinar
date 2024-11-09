@@ -2,17 +2,48 @@
   header {
     display: flex;
     justify-content: space-between;
+    padding: 1.3em;
   }
-  .sumir {
+  #nav-menu{
     display: none;
   }
+  
   .idioma {
     display: none;
   }
 
-span.material-symbols-rounded
-{
-  display: block;
+  span.material-symbols-rounded
+  {
+    display: block;
+  }
+ 
+.menu-aside{
+  display: none;
+  position: absolute;
+  top: 20%;
+  right: 20px;
+  width: 200px;
+  height: 200px;
+}
+content-navright{
+  display: flex;
+  flex-direction: column;
+  background-color: #325B42;
+ border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 23px;
+}
+.content-navright a {
+  color: white;
 }
 
+
+
+
+  .video video {
+    height: 300px;
+  }
 }
+

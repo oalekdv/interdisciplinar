@@ -1,6 +1,8 @@
 function shownav()
 {
-  let nav = document.getElementById('nav-menu')
+  let nav = document.getElementById('menu-nav-side');
 
-  nav.classList.toggle('show')
+  nav.classList.toggle('menu-aside')
+ 
 }
+
