@@ -47,9 +47,7 @@
     <main>
    
       <section class="banner-video">
-        <div class="video">
-          <video src="./assets/imgs/banner_images.mp4" autoplay loop></video>
-        </div>
+        <div class="video"> <video id="videos" autoplay loop muted playsinline> <source src="./assets/imgs/banner_images.mp4" type="video/mp4"> Seu navegador não suporta vídeos HTML5. </video> </div>
       </section>
 
     </main>
@@ -57,7 +55,10 @@
         <p>Com amor EcoEcho  </p>
     </footer>
 
-
+    <script>
+       window.onload = function() { var video = document.getElementById('videos'); 
+       video.play(); };
+    </script>
     <script src="./assets/scripts/menu.js"></script>
 </body>
 </html>
