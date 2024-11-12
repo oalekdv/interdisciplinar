@@ -1,21 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-
-
-
-
-
-
-
-
 body{
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100vh;
-  background-color: #366147d5;
-  position: relative;
+  /* background-color: #366147d5; */
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -87,10 +75,9 @@ span.material-symbols-rounded
 
 
 main{
-  background-color: #98a7c7;
+  /* background-color: #98a7c7; */
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  height: 100%;
 }
 
 .banner-video{
@@ -110,7 +97,7 @@ main{
   object-fit: cover;
   width: 100%;
   height: 100%;
-  /* border-radius: 20px; */
+  border-radius: 0 0 20px 20px;
 }
 
 
@@ -118,35 +105,82 @@ main{
 
 .manchetes-section{
   /* background-color: #0AB356; */
-  width: 100%;
-  padding: 1rem;
-}
-
-.manchetes
-{
+  /* border: 1px solid black; */
+  background-color: white;
+  padding: 0 2rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 10px;
+  align-items: flex-start;
+}
+.manchetes-section h2 {
+  margin-left: 30px;
 }
 
-.articles{
-  width: 180px;
-  height: 200px;
-  border: 1px solid;
+.manchetes-content{
+  width: 100%;
+  padding: 10px 30px;
+  gap: 18px;
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid purple; */
+
+}
+.article{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 300px;
+  /* border: 2px solid; */
+  cursor: pointer;
   border-radius: 8px;
   overflow: hidden;
 }
-
-.bg-news
+.article:hover {
+  border: 1px solid black;
+}
+.bg
 {
   width: 100%;
   height: 100%;
   background-image: url('./assets/imgs/bbcbg.webp');
   background-position: center;
-  background-position-x: right;
   background-size: cover;
+  background-position-x: right;
+  border-radius: 8px;
 }
+.title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+}
+.title h3 {
+  font-size: 16px;
+}
+
+.title a {
+  text-decoration: none;
+  color: #800233;
+  background-color: #0AB356;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 1.4em;
+}
+
+.title a:hover {
+  background-color: darkolivegreen;
+  color: white;
+  scale: 0.98;
+}
+/* 
+
+
+
+
+
 
 .bg-news:hover {
   filter: brightness(80%);
-}
+} */
