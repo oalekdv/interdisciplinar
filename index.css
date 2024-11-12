@@ -3,7 +3,7 @@
 body{
   display: flex;
   flex-direction: column;
-  /* background-color: #366147d5; */
+  background-color: #366147d5;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
