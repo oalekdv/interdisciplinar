@@ -17,11 +17,23 @@
     display: block;
   }
 
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+
 .content-navright a {
   color: white;
 }
+
+.video {
+  /* border: 2px solid; */
+  height: fit-content;
+}
   .video video {
     height: 300px;
+    transition: height 0.7s ease-out;
+    /* border: 2px solid; */
   }
 }
 
