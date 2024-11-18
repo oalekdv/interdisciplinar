@@ -181,7 +181,7 @@ main{
   align-items: center;
   gap: 10px;
   padding: 8px;
-  color: white;
+  /* color: white; */
 }
 .title h3 {
   font-size: 16px;
