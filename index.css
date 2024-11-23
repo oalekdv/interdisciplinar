@@ -10,6 +10,7 @@ body{
   flex-direction: column;
   background-color: #366147d5;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* height: 100vh; */
 }
 
 header
@@ -256,4 +257,53 @@ main{
   font-weight: 800;
   letter-spacing: 1.8x;
 } */
+
+footer{ 
+  /* padding: 1.5rem; */
+  width: 100%;
+
+}
+
+.contatos{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+  /* border: 2px solid rgb(0, 81, 255); */
+  padding: 10px;
+  /* & .numeros{
+    /* border: 2px solid #ffcc00; 
+  } */
+}
+
+
+
+.fooContent{
+  display: flex;
+  width: 100%;
+  /* border: 2px solid purple; */
+}
+
+.agente{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  /* border: 2px solid white; */
+}
+.agente strong {
+  /* border: 1px solid; */
+  align-items: flex-start;
+}
+
+.faleconosco {
+  display: flex;
+  gap: 10px;
+}
+
+.faleconosco span img{
+ 
+  width: 30px;
+   height: 30px;
+}
 

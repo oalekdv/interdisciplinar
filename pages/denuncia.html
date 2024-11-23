@@ -1,11 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
+  <!-- meta -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Denúncia</title>
+  <!-- meta end -->
+
+  <!-- css begin -->
+  <link rel="stylesheet" href="../assets/css/reset.css">
+   <link rel="stylesheet" href="../assets/css/styledenuncia.css">
+  <link rel="stylesheet" href="../assets/css/responsivo.css">
+  <link rel="stylesheet" href="../index.css">
+  <!-- css end -->
+
+  <!-- icons-symbols -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=translate" />
+  <!-- icons-symbols end -->
+
+  <title>Quem somos</title>
 </head>
-<body>
-  
+<body id="bodyDenun">
+  <header>
+    <div class="logo">
+      <img src="../assets/imgs/logo_ecoecho-transparent.png" alt="">
+
+    </div>
+    <nav class="nav-header" id="nav-menu">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#noticias">Notícias</a>
+      <a href="#denuncia">Denúncia</a>
+      <a href="./pages/aboutus.html">Quem somos?</a>
+    </nav>
+    <div class="idioma">
+      <span class="material-symbols-outlined">
+        translate
+        </span>
+    </div>
+    <div class="menu" onclick="shownav()">
+      <span class="material-symbols-rounded" >
+        menu
+        </span>
+    </div>
+
+  </header>
+  <main id="maindenuncia">
+    <div class="container">
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="option">
+                <label>
+                    <input type="radio" name="denuncia" value="anonima" class="options" id="anonima" checked> Denúncia Anônima
+                </label>
+                <label>
+                    <input type="radio" name="denuncia" value="identificada" class="identificada"> Denúncia com Identificação
+                </label>
+            </div>
+
+            <!-- Campos Comuns (CEP e Endereço) -->
+            <div class="campo" id="nomeIdentificado" style="display: none;">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" required>
+          </div>
+
+          <div class="campo" id="telefoneIdentificado" style="display: none;">
+              <label for="telefone">Telefone:</label>
+              <input type="tel" id="telefone" name="telefone" required>
+          </div>
+            <div class="campo">
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" maxlength="9" placeholder="Digite o CEP" required>
+            </div>
+
+            <div class="campo">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" readonly required>
+            </div>
+
+            <!-- Campos para Denúncia Anônima -->
+            <div class="campo" id="descricaoAnonima" style="display: block;">
+                <label for="descricao">Descrição do ocorrido:</label>
+                <textarea id="descricao" name="descricao" rows="4" required></textarea>
+            </div>
+
+            <div class="campo" id="anexoAnonima" style="display: block;">
+                <label for="imagemAnonima">Anexar imagem:</label>
+                <input type="file" id="imagemAnonima" name="imagemAnonima" accept="image/*">
+            </div>
+
+            <!-- Campos para Denúncia com Identificação -->
+            
+
+            <div class="campo" id="descricaoIdentificada" style="display: none;">
+                <label for="descricaoIdentificada">Descrição do ocorrido:</label>
+                <textarea id="descricaoIdentificada" name="descricaoIdentificada" rows="4" required></textarea>
+            </div>
+
+            <div class="campo" id="anexoIdentificado" style="display: none;">
+              
+              <textarea id="descricao" name="descricao" rows="4" required></textarea>
+                <label for="imagemIdentificada">Anexar imagem:</label>
+                
+                <input type="file" id="imagemIdentificada" name="imagemIdentificada" accept="image/*">
+            </div>
+
+            <button type="submit">Enviar Denúncia</button>
+        </form>
+    </div>
+   </main>
+   <script src="../assets/scripts/Dforms.js"></script>
 </body>
 </html>
