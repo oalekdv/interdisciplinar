@@ -8,7 +8,7 @@ html{
 body{
   display: flex;
   flex-direction: column;
-  background-color: #366147d5;
+  background-color: #9db6a3;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   /* height: 100vh; */
 }
@@ -21,7 +21,7 @@ header
   width: 100%;
   height: 100px;
   padding: 10px;
-  background-color: #1f30576b;
+  background-color: #3F5B5E;
   box-shadow: 4px 4px 10px rgba(24, 22, 22, 0.473);
   position: relative;
 } 
@@ -115,7 +115,7 @@ main{
 .manchetes-section{
   /* background-color: #0AB356; */
   /* border: 1px solid black; */
-  background-color: white;
+  /* background-color: white; */
   padding: 0 2rem;
   display: flex;
   flex-direction: column;
@@ -140,10 +140,11 @@ main{
   flex-direction: column;
   width: 300px;
   height: 300px;
-  /* border: 2px solid; */
+  border: 2px solid rgb(109, 133, 66);
   cursor: pointer;
   border-radius: 8px;
   overflow: hidden;
+  background-color: rgba(243, 242, 242, 0.815);
 }
 .article:hover {
   border: 1px solid black;
@@ -152,7 +153,7 @@ main{
 {
   width: 100%;
   height: 100%;
-  border-radius: 8px;
+  /* border-radius: 4px; */
 }
 
 #not1 {
@@ -189,19 +190,24 @@ main{
 }
 .title h3 {
   font-size: 16px;
+  font-weight: 500;
 }
 
 .title a {
+  align-content: center;
+  justify-self: center;
   text-decoration: none;
-  color: #77002e;
-  background-color: #0AB356;
+  color: #ffffff;
+  background-color: #295135;
   padding: 4px 8px;
   border-radius: 8px;
-  font-size: 1.4em;
+  font-size: 20px;
+  width: 100px;
+  height: 40px;
 }
 
 .title a:hover {
-  background-color: darkolivegreen;
+  background-color: rgb(55, 63, 41);
   color: white;
   /* scale: 0.98; */
 }
@@ -212,56 +218,77 @@ main{
 .denuncia-sec{
   display: flex;
   flex-direction: column;
-  padding: 0 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 38px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   width: 100%;
-  background-color: rgb(56, 56, 56);
+  /* background-color: rgb(56, 56, 56); */
 }
 .denuncia-sec h2{
   width: 100%;
   text-align: center;
   color: #FFFF;
+  font-size: 40px;
+  font-weight: 600;
+
   /* margin-left: 30px; */
 }
 
 .denuncia-sec .content-denuncia{
-  align-self: center;
-  /* border: 2px solid black;  */
   display: flex;
   flex-direction: column;
-  width: 60%;
-  height: 400px;
-  justify-content: center;
-  gap: 8px;
+  width: 80%;
+  height: 100%;
+  gap: 38px;
   padding: 16px;
   border-radius: 8px;
-  background-color: #756b58;
-  font-weight: 500;
+  background-color: #8E877A;
   color: #ffff;
 }
 
 .content-denuncia a{
   align-self: center;
   background-color: #E40505;
-  padding: 10px;
-  height: 44px;
-  width: 126px;
+  /* padding: px; */
+  height: 60px;
+  width: 280px;
+  /* line-height: inherit; */
+  align-content: center;
+  justify-content: center;
   text-align: center;
   border-radius: 8px;
   color: #FFFFFF;
-  
+  font-size: 24px;
 }
-/* 
-.content-denuncia strong, h3{
-  color: #f8f8f8;
-  font-weight: 700;
-  font-weight: 800;
-  letter-spacing: 1.8x;
-} */
+
+.txtDenun h3{
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+}
+
+
+.txtDenun{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  padding: 10px;
+  height: 100%;
+}
+.txtDenun p{
+  font-size: 19px;
+  font-weight: 400;
+}
 
 footer{ 
+  background-color: #3F5B5E;
   /* padding: 1.5rem; */
   width: 100%;
-
+  color: white;
+  font-weight: 300;
 }
 
 .contatos{
@@ -280,6 +307,7 @@ footer{
 
 .fooContent{
   display: flex;
+  justify-content: center;
   width: 100%;
   /* border: 2px solid purple; */
 }
@@ -294,6 +322,7 @@ footer{
 .agente strong {
   /* border: 1px solid; */
   align-items: flex-start;
+  font-weight: 400;
 }
 
 .faleconosco {

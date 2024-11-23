@@ -73,3 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
       buscarEndereco(this.value, document.getElementById('enderecoIdentificado'));
   });
 });
+
+function apagar() {
+    
+}
