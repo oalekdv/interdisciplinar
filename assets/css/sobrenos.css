@@ -1,0 +1,27 @@
+.equipe {
+    border: 1px solid black; 
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+img{
+    height: 180px;
+    border-radius: 100px;
+    width: 180px;
+}
+.i{
+    width: 270px;
+    height: 270px;
+    border-radius: 40px 20px;
+    padding: 18px 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #295135;
+}
+.i h2{
+    color: white;
+}
