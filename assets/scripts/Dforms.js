@@ -72,8 +72,22 @@ document.addEventListener("DOMContentLoaded", function() {
   document.getElementById('cepIdentificado').addEventListener('blur', function() {
       buscarEndereco(this.value, document.getElementById('enderecoIdentificado'));
   });
+
+  
 });
 
-function apagar() {
-    
-}
+// const nomeIdentificado = document.getElementById('nomeIdentificado');
+//   const telefoneIdentificado = document.getElementById('telefoneIdentificado');
+//   const descricaoIdentificada = document.getElementById('descricaoIdentificada');
+//   const anexoIdentificado = document.getElementById('anexoIdentificado');
+
+//   const descricaoAnonima = document.getElementById('descricaoAnonima');
+//   const anexoAnonima = document.getElementById('anexoAnonima');
+// function apagar() {
+//     telefoneIdentificado.value = "";
+//     nomeIdentificado.value = "";
+//     descricaoIdentificada.value = "";
+//     anexoIdentificado.value = "";
+//     descricaoAnonima.value = "";
+//     // telefoneIdentificado.value = "";
+//   }
