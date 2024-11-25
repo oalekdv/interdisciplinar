@@ -15,7 +15,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
 }
-img{
+.i img{
     height: 180px;
     border-radius: 100px;
     width: 130px;
@@ -23,7 +23,7 @@ img{
 .i{
     width: 200px;
     height: 200px;
-    border-radius: 40px 20px;
+    border-radius: 30px 20px;
     padding: 18px 16px;
     display: flex;
     align-items: center;
