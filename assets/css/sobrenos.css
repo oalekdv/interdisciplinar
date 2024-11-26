@@ -1,3 +1,8 @@
+
+
+
+
+
 .bodyqm{
     /* min-height: 100vh;  */
     flex: 1;
@@ -18,7 +23,6 @@
     /* border: 2px solid white; */
     background-color: rgba(240, 248, 255, 0.233);
     box-shadow: 0 10px 30px 40px rgba(240, 248, 255, 0.233);
-
 }
 
 .aboutusTxt{
@@ -28,12 +32,12 @@
 
 }
 .aboutusTxt p{
-    
+    margin-bottom: 2em;
     /* font-family: ; */
     font-size: 1.2rem;
     /* text-align: justify; */
     font-weight: 400;
-
+    text-justify: newspaper;
     /* font-stretch: condensed; */
 }
 
@@ -74,21 +78,23 @@
     /* border: 2px solid red; */
 }
 .i img{
-    height: 180px;
+    height: 100%;
     border-radius: 100px;
-    width: 130px;
+    width: 100%;
 }
 .i{
-    width: 200px;
-    height: 200px;
+    width: 12rem;
+    height: 16rem;
     border-radius: 30px 20px;
-    padding: 18px 16px;
+    padding: 1.8rem 0.75rem;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: #295135;
+    gap: 2rem;
 }
 .i h2{
     color: white;
 }
+

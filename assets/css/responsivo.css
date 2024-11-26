@@ -35,5 +35,17 @@
     transition: height 0.7s ease-out;
     /* border: 2px solid; */
   }
+
+}
+
+
+@media (max-width: 700px){
+  .equipecontent{
+      flex-wrap: wrap;
+  }
+
+  .foocontet {
+      flex-direction: column;
+  }
 }
 
