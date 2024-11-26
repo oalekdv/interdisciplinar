@@ -10,8 +10,8 @@ body{
   flex-direction: column;
   background-color: #9db6a3;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  /* height: 100vh; */
-  /* width: 100%; */
+  min-height: 100vh; 
+
 }
 
 header
@@ -35,13 +35,13 @@ header .nav-header {
   justify-content: center;
   align-items: center;
   width: 800px;
-  /* border: 1px solid white; */
+  border: 1px solid white;
   gap: 25px;
 }
 
 header .nav-header a {
   color: #fefef2;
-  font-size: 1.3em;
+  font-size: 1.2rem;
   transition: color 0.2s ease-in;
 }
 header .nav-header a:hover{
@@ -57,7 +57,7 @@ header .nav-header a:hover{
   border: 1px solid black;
   padding: 4px 8px;
   border-radius: 8px;
-  font-size: 1.3em;
+  font-size: 1.2rem;
   transition: background-color 0.19s ease-in-out;
   cursor: pointer;
 }
@@ -75,7 +75,6 @@ header .nav-header a:hover{
 span.material-symbols-rounded
 {
   display: none;
-  font-size: 50px;
   cursor: pointer;
 }
 
@@ -83,8 +82,8 @@ span.material-symbols-rounded
 /* VIDEO MAIN */
 main{
   /* background-color: #98a7c7; */
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* height: 100%; */
 }
 
 .banner-video{
@@ -142,7 +141,7 @@ main{
 .article{
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 240px;
   height: 250px;
   border: 2px solid rgb(109, 133, 66);
   cursor: pointer;
@@ -150,13 +149,14 @@ main{
   overflow: hidden;
   background-color: rgba(243, 242, 242, 0.815);
 }
-.article:hover {
+/* .article:hover {
   border: 1px solid black;
-}
+  transition: border 0.4s ease-in;
+} */
 .bg
 {
   width: 100%;
-  height: 100%;
+  height: 400px;
   /* border-radius: 4px; */
 }
 
@@ -234,7 +234,7 @@ main{
   width: 100%;
   text-align: center;
   color: #FFFF;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
 
   /* margin-left: 30px; */
@@ -264,13 +264,13 @@ main{
   text-align: center;
   border-radius: 8px;
   color: #FFFFFF;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .txtDenun h3{
   width: 100%;
   text-align: center;
-  font-size: 28px;
+  font-size: 25px;
 }
 
 
@@ -283,16 +283,18 @@ main{
   height: 100%;
 }
 .txtDenun p{
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 400;
 }
 
 footer{ 
   background-color: #3F5B5E;
   /* padding: 1.5rem; */
-  width: 100%;
+  /* width: 100%; */
   color: white;
   font-weight: 300;
+  margin-top: auto;
+  /* height: 100%; */
 }
 
 .contatos{
