@@ -76,6 +76,48 @@ document.addEventListener("DOMContentLoaded", function() {
   
 });
 
+let msgconf = document.getElementById("confirmacao");
+
+function apagar() {
+    // Limpa todos os inputs de texto
+    document.getElementById('nome').value = "";
+    document.getElementById('telefone').value = "";
+    document.getElementById('cep').value = "";
+    document.getElementById('endereco').value = "";
+    
+    // Limpa as textareas
+    document.getElementById('descricao').value = "";
+    document.getElementById('descricaoIdentificada').value = "";
+
+    // Reseta os radio buttons
+    // document.querySelectorAll('input[name="denuncia"]').forEach((radio) => {
+    //     radio.checked = false;
+    // });
+    
+    // Esconde todos os campos adicionais
+    document.getElementById('nomeIdentificado').style.display = 'none';
+    document.getElementById('telefoneIdentificado').style.display = 'none';
+    document.getElementById('descricaoIdentificada').style.display = 'none';
+    document.getElementById('anexoIdentificado').style.display = 'none';
+    
+    // Mostra novamente os campos para denúncia anônima
+    document.getElementById('descricaoAnonima').style.display = 'block';
+    document.getElementById('anexoAnonima').style.display = 'block';
+
+    // Limpa os inputs de arquivos (se necessário)
+    document.getElementById('imagemAnonima').value = "";
+    document.getElementById('imagemIdentificada').value = "";
+
+
+    msgconf.style.color = "#87ffad";
+    msgconf.textContent = "Denuncia enviada com sucesso. Muito obrigado!"
+    setTimeout(() => {
+        msgconf.style.display = "none"
+    }, 1800)
+}
+
+
+
 // const nomeIdentificado = document.getElementById('nomeIdentificado');
 //   const telefoneIdentificado = document.getElementById('telefoneIdentificado');
 //   const descricaoIdentificada = document.getElementById('descricaoIdentificada');

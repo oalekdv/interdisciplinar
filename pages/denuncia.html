@@ -32,11 +32,11 @@
       <a href="#denuncia">Denúncia</a>
       <a href="../pages/aboutus.html">Quem somos?</a>
     </nav>
-    <div class="idioma">
+    <!-- <div class="idioma">
       <span class="material-symbols-outlined">
         translate
         </span>
-    </div>
+    </div> -->
     <div class="menu" onclick="shownav()">
       <span class="material-symbols-rounded" >
         menu
@@ -45,6 +45,9 @@
 
   </header>
   <main id="maindenuncia">
+
+    
+
     <div class="container">
         <form action="#" method="post" enctype="multipart/form-data">
             <div class="option">
@@ -79,7 +82,7 @@
             <!-- Campos para Denúncia Anônima -->
             <div class="campo" id="descricaoAnonima" style="display: block;">
                 <label for="descricao">Descrição do ocorrido:</label>
-                <textarea id="descricao" name="descricao" rows="4" required></textarea>
+                <textarea id="descricao" name="descricao" rows="4" required placeholder="Digite aqui..."></textarea>
             </div>
 
             <div class="campo" id="anexoAnonima" style="display: block;">
@@ -97,14 +100,16 @@
 
             <div class="campo" id="anexoIdentificado" style="display: none;">
               
-              <textarea id="descricao" name="descricao" rows="4" required></textarea>
+              <textarea id="descricao" name="descricao" rows="4" required placeholder="Digite aqui..."></textarea>
                 <label for="imagemIdentificada">Anexar imagem:</label>
                 
                 <input type="file" id="imagemIdentificada" name="imagemIdentificada" accept="image/*">
             </div>
 
-            <button type="submit" onclick="apagar()">Enviar Denúncia</button>
+            <button type="button" onclick="apagar()">Enviar Denúncia</button>
+          
         </form>
+        <h2 id="confirmacao"></h2>
     </div>
    </main>
    <footer>

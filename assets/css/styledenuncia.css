@@ -11,14 +11,25 @@
   background-color: #9db6a3;
 }
 
-
+#confirmacao{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    margin: auto;
+    font-size: 18px;
+}
 
 .container {
+  position: relative;
   width: 50%;
   background-color: #8E877A;
-  padding: 20px;
+  padding: 30px 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  position: relative;
+  font-family: "inter", sans-serif;
+
 }
 
 h1 {
@@ -26,6 +37,7 @@ h1 {
 }
 
 .form-group {
+
   margin-bottom: 15px;
 }
 
@@ -50,6 +62,8 @@ textarea {
 }
 
 input[type="file"] {
+  border-radius: 10px;
+  border: 2px solid white
 }
 
 button {
@@ -62,6 +76,8 @@ button {
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
+  margin-top: 18px;
+  outline: none;
 }
 
 
