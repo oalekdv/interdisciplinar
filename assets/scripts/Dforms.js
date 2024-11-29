@@ -90,9 +90,9 @@ function apagar() {
     document.getElementById('descricaoIdentificada').value = "";
 
     // Reseta os radio buttons
-    // document.querySelectorAll('input[name="denuncia"]').forEach((radio) => {
-    //     radio.checked = false;
-    // });
+    document.querySelectorAll('input[name="denuncia"]').forEach((radio) => {
+        radio.checked = false;
+    });
     
     // Esconde todos os campos adicionais
     document.getElementById('nomeIdentificado').style.display = 'none';
@@ -100,6 +100,13 @@ function apagar() {
     document.getElementById('descricaoIdentificada').style.display = 'none';
     document.getElementById('anexoIdentificado').style.display = 'none';
     
+
+    document.querySelectorAll('input[name="denuncia"]').forEach((radio) => {
+        radio.checked = false; 
+    });
+
+
+
     // Mostra novamente os campos para denúncia anônima
     document.getElementById('descricaoAnonima').style.display = 'block';
     document.getElementById('anexoAnonima').style.display = 'block';
